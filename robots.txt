@@ -1,0 +1,12 @@
+# robots.txt for the Zippity Media Lab site.
+# Served at https://zippitymedialab.com/
+# Submit https://zippitymedialab.com/sitemap.xml directly in Search Console.
+# The <head> comment block in index.html lists every domain-dependent string.
+
+User-agent: *
+Allow: /
+
+# Nothing here is private, and the whole site is a single small page,
+# so there is no crawl budget to protect.
+
+Sitemap: https://zippitymedialab.com/sitemap.xml
