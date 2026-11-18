@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human voiceovers, optional original music. South West.">
+    <meta name="description" content="Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human narration, optional original music and sound design. South West.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <!-- TODO(seo): set og:locale to en_GB once any non-UK market is targeted -->
     <meta name="theme-color" content="#0d1117">
@@ -36,7 +36,7 @@
     <meta property="og:locale" content="en_GB">
     <meta property="og:url" content="https://zippitymedialab.com/">
     <meta property="og:title" content="Cinematic Drone Storytelling in Bristol | Zippity Media Lab">
-    <meta property="og:description" content="Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human voiceovers, optional original music. South West.">
+    <meta property="og:description" content="Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human narration, optional original music and sound design. South West.">
     <!-- TODO(seo): og:image needs a real 1200x630 JPG at assets/og-1200x630.jpg (see reserved media slots) -->
     <meta property="og:image" content="https://zippitymedialab.com/assets/og-1200x630.jpg">
     <meta property="og:image:width" content="1200">
@@ -46,7 +46,7 @@
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cinematic Drone Storytelling in Bristol | Zippity Media Lab">
-    <meta name="twitter:description" content="Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human voiceovers, optional original music.">
+    <meta name="twitter:description" content="Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human narration, optional original music and sound design.">
     <meta name="twitter:image" content="https://zippitymedialab.com/assets/og-1200x630.jpg">
     <meta name="twitter:image:alt" content="Cinematic aerial view captured by Zippity Media Lab over the South West">
 
@@ -56,7 +56,7 @@
     <!-- TODO(seo): add apple-touch-icon at /assets/apple-touch-icon.png (180x180) -->
 
     <!-- ==================== STRUCTURED DATA ====================
-         @graph: ProfessionalService (#business) + 4 Service nodes + FAQPage + WebPage.
+         @graph: ProfessionalService (#business) + 5 Service nodes + FAQPage + WebPage + WebSite.
          Deliberately NO AggregateRating/Review markup: no genuine reviews exist
          and fabricated review schema is a Google manual-action risk.
          FAQ text below MUST stay verbatim in sync with the visible FAQ section.
@@ -79,7 +79,7 @@
           "@type": ["ProfessionalService", "LocalBusiness"],
           "@id": "https://zippitymedialab.com/#business",
           "name": "Zippity Media Lab",
-          "description": "Cinematic drone photography, videography and human-led storytelling for high-end property, events, historic sites and conservation across Bristol, North Somerset and the wider South West. Human-written scripts, professional voice actors and optional original music.",
+          "description": "Cinematic drone photography, videography and human-led storytelling for high-end property, events, historic sites and conservation across Bristol, North Somerset and the wider South West. Human-written scripts, professional narration, optional original music and sound design.",
           "url": "https://zippitymedialab.com/",
           "email": "hello@zippitymedialab.com",
           "telephone": "+447988048357",
@@ -152,9 +152,10 @@
             "High-end property films",
             "Event films",
             "Heritage and conservation films",
-            "Human voiceover production",
+            "Human narration production",
             "Scriptwriting",
             "Original music composition",
+            "Sound design",
             "A1 Open sub-category operations",
             "Roof, chimney and solar panel inspections",
             "Audio mastering"
@@ -180,15 +181,16 @@
         },
         {
           "@type": "Service",
-          "@id": "https://zippitymedialab.com/#service-aerial",
-          "serviceType": "Cinematic Aerial Storytelling",
-          "name": "Cinematic Drone Photography, Videography and Storytelling",
-          "description": "4K HDR drone photography and film for high-end property, events, historic sites and conservation. Story-led edits with human-written scripts and professional voiceovers, delivered horizontal and vertical, with repeatable waypoint missions for conservation and progress monitoring.",
+          "@id": "https://zippitymedialab.com/#service-story",
+          "serviceType": "Story Film Production",
+          "name": "Story Films",
+          "description": "Research-led short films for conservation, heritage, architecture and landscape projects. Human-written scripts, aerial and ground filming, interviews, edit and grade, with optional human narration, original music and sound design.",
           "provider": { "@id": "https://zippitymedialab.com/#business" },
           "areaServed": [
             { "@type": "City", "name": "Bristol" },
             { "@type": "City", "name": "Bath" },
-            { "@type": "AdministrativeArea", "name": "North Somerset" }
+            { "@type": "AdministrativeArea", "name": "North Somerset" },
+            { "@type": "AdministrativeArea", "name": "South West England" }
           ],
           "offers": {
             "@type": "Offer",
@@ -203,15 +205,53 @@
         },
         {
           "@type": "Service",
-          "@id": "https://zippitymedialab.com/#service-audio",
-          "name": "Human Voiceover, Scriptwriting and Original Music",
-          "serviceType": "Story, Voice and Audio Post-Production",
-          "description": "Human-written scripts, professional human voice actors and optional original music composed to picture, plus multi-track audio mixing and mastering to 24-bit/48kHz. Licensing included so clients and production partners can publish worldwide without extra clearance.",
+          "@id": "https://zippitymedialab.com/#service-record",
+          "serviceType": "Repeatable Aerial Monitoring and Archive",
+          "name": "Aerial Records and Monitoring",
+          "description": "Repeatable GPS waypoint flights, 4K stills and video for conservation, restoration and construction monitoring, with a clean like-for-like timeline for funders, archives and reports.",
           "provider": { "@id": "https://zippitymedialab.com/#business" },
           "areaServed": [
             { "@type": "City", "name": "Bristol" },
             { "@type": "City", "name": "Bath" },
+            { "@type": "AdministrativeArea", "name": "North Somerset" },
+            { "@type": "AdministrativeArea", "name": "Somerset" }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://zippitymedialab.com/#service-property",
+          "serviceType": "Place-led Property and Architecture Film",
+          "name": "Property and Architecture Films",
+          "description": "Story-led films for exceptional homes, estates and architecturally significant buildings, showing architecture in its landscape rather than as a listing tour.",
+          "provider": { "@id": "https://zippitymedialab.com/#business" },
+          "areaServed": [
+            { "@type": "City", "name": "Bristol" },
+            { "@type": "City", "name": "Bath" },
+            { "@type": "AdministrativeArea", "name": "North Somerset" },
             { "@type": "AdministrativeArea", "name": "South West England" }
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "GBP",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://zippitymedialab.com/#service-event",
+          "serviceType": "Aerial Event Coverage",
+          "name": "Event Films",
+          "description": "Discreet aerial coverage for weddings, private functions and outdoor events, planned around crowd safety and venue access.",
+          "provider": { "@id": "https://zippitymedialab.com/#business" },
+          "areaServed": [
+            { "@type": "City", "name": "Bristol" },
+            { "@type": "City", "name": "Bath" },
+            { "@type": "AdministrativeArea", "name": "Somerset" }
           ],
           "offers": {
             "@type": "Offer",
@@ -244,71 +284,79 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Do I need a drone licence to film my property, event or heritage site?",
+              "name": "What kinds of films do you make?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. All of our drone operations are flown by a registered remote pilot in the CAA A1 Open sub-category using sub-250g aircraft. You are hiring a compliant commercial operator, not operating the drone yourself, so the legal duty to be qualified sits with us. We will also confirm airspace and any permissions before flying."
+                "text": "Story-led short films for conservation, heritage, architecture and landscape projects. We can make campaign films, funder and supporter films, interpretation pieces, archive records and social cuts — always built around a human story."
               }
             },
             {
               "@type": "Question",
-              "name": "Are you a drone company in Bristol?",
+              "name": "Who do you work with?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We are based in Weston-super-Mare, North Somerset, and cover Bristol, Bath and the wider South West of England as our core service area. Bristol city centre is roughly 22 miles from our base, and we schedule Bristol shoots regularly."
+                "text": "Conservation and environment organisations, heritage and historic sites, architects and landscape practices, and owners of exceptional homes and estates. We also work with charities, community groups and other production teams."
               }
             },
             {
               "@type": "Question",
-              "name": "What can you film with a sub-250g drone?",
+              "name": "Can you film on protected or sensitive sites?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sub-250g aircraft can legally fly closer to people and structures than heavier drones, which makes them well suited to architectural property films, event establishing shots and close inspection of historic buildings. We shoot 4K HDR at up to 60fps with 10-bit D-Log M capture for colour grading."
+                "text": "Yes. We plan around protected landscapes, wildlife, landowners and public access, and we confirm permissions and airspace before the shoot. Our sub-250g aircraft let us work discreetly around buildings, visitors and sensitive habitats."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you use AI voiceovers or scripts?",
+              "name": "Do you film interviews, archive and location sound?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. We do not use AI-generated voiceovers or AI-written scripts. Every script is written by a human, and every voiceover is performed by a professional human voice actor. Original music is optional and composed for the film."
+                "text": "Yes. A story film can include interviews, archive material, location sound and ground-level footage alongside the aerial work. We can also work with your existing archive or footage."
               }
             },
             {
               "@type": "Question",
-              "name": "Can I get a human voiceover and original music?",
+              "name": "Can you show change over time?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We can write the script, record a professional human voiceover and add optional original music composed to picture. Voice, music and location sound are then mixed and mastered in-house at 24-bit/48kHz."
+                "text": "Yes. We program repeatable GPS waypoint missions, so each visit captures an identical flight path and framing. That gives you a clean like-for-like timeline for conservation, restoration or construction monitoring."
               }
             },
             {
               "@type": "Question",
-              "name": "Can you film a conservation, restoration or construction project every month from the same angle?",
+              "name": "Do you offer narration, original music and sound design?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We program repeatable GPS waypoint missions, so each visit captures an identical flight path and framing. That gives you a clean like-for-like progress timeline for conservation monitoring, restoration records or construction updates."
+                "text": "Yes. Narration, original music and sound design are available on any film. Every script is written by a human and every narration performance is by a professional human voice actor. Music is composed to picture, and sound design is mixed in-house at 24-bit/48kHz."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you offer discounts for community projects?",
+              "name": "How long is a film, and where can it be used?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We reserve a limited number of substantially discounted projects for charities, schools, community groups, arts and cultural organisations, and local heritage or conservation initiatives. Discounts are assessed case by case, based on scope, access and how the film will be used."
+                "text": "Most story films run from 60 to 180 seconds, with shorter social cuts where needed. We deliver horizontal masters and vertical versions, and licensing is included so you can publish worldwide without further clearance."
               }
             },
             {
               "@type": "Question",
-              "name": "How fast can you turn footage around?",
+              "name": "How long does it take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Standard turnaround is 48 hours from shoot to final master, including colour grading, multi-track audio mixing and voiceover sync. Rush delivery is available on request and subject to shoot volume."
+                "text": "Aerial records and inspections are typically delivered within 48 hours of the shoot. Story films take longer because of research, scripting, narration and post-production — usually two to four weeks depending on scope."
               }
             },
             {
               "@type": "Question",
-              "name": "Are you insured for commercial drone work?",
+              "name": "Where do you work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are based in Weston-super-Mare, North Somerset, and cover Bristol, Bath and the wider South West of England as our core service area. We also travel for the right project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are you CAA registered and insured?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Yes. All commercial operations are backed by third-party aviation liability insurance to EC785/2004, and we are registered with the Civil Aviation Authority as operator GBR-OP-WT9QWY4TY8KC and remote pilot GBR-RP-GVPVYRL8PV3T."
@@ -316,10 +364,10 @@
             },
             {
               "@type": "Question",
-              "name": "Can agencies, event producers and heritage organisations sub-contract you for white-label delivery?",
+              "name": "Do you use AI voiceovers or scripts?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We work as a white-label production partner for agencies, event producers and heritage organisations. You get unbranded masters, full audio licensing included so you can publish worldwide without further clearance, and delivery within 48 hours."
+                "text": "No. We do not use AI-generated narration or AI-written scripts. Every script is written by a human, and every narration performance is by a professional human voice actor."
               }
             }
           ]
@@ -329,7 +377,7 @@
           "@id": "https://zippitymedialab.com/#webpage",
           "url": "https://zippitymedialab.com/",
           "name": "Cinematic Drone Storytelling in Bristol | Zippity Media Lab",
-          "description": "Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human voiceovers, optional original music. South West.",
+          "description": "Cinematic drone films for high-end property, events, heritage and conservation. Human-written scripts, human narration, optional original music and sound design. South West.",
           "inLanguage": "en-GB",
           "isPartOf": { "@id": "https://zippitymedialab.com/#website" },
           "about": { "@id": "https://zippitymedialab.com/#business" }
@@ -623,13 +671,13 @@
             display: block;
         }
 
-        .portfolio-card figcaption {
+        .portfolio-card .portfolio-caption {
             padding: 1rem 1.15rem;
             font-size: 0.82rem;
             color: var(--text-muted);
         }
 
-        .portfolio-card figcaption strong {
+        .portfolio-card .portfolio-caption strong {
             display: block;
             color: var(--text-main);
             font-size: 0.9rem;
@@ -800,19 +848,6 @@
             clip: rect(0, 0, 0, 0);
             white-space: nowrap;
             border: 0;
-        }
-
-        .hero-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            background: rgba(33, 38, 45, 0.8);
-            border: 1px solid var(--border-color);
-            font-size: 0.8rem;
-            color: var(--accent-cyan);
-            margin-bottom: 1.5rem;
         }
 
         .hero h1 {
@@ -1588,13 +1623,6 @@
             .hero-location {
                 font-size: 0.95rem;
             }
-            .hero-pill {
-                max-width: 100%;
-                justify-content: center;
-                flex-wrap: wrap;
-                line-height: 1.45;
-                text-align: center;
-            }
             .hero-actions {
                 margin-bottom: 3rem;
             }
@@ -1648,9 +1676,6 @@
             }
             .hero {
                 padding: 112px 0 56px;
-            }
-            .hero-pill {
-                font-size: 0.85rem;
             }
             .hero h1 {
                 font-size: 1.95rem;
@@ -1883,9 +1908,6 @@
             .faq-item {
                 padding: 0 1rem;
             }
-            .hero-pill {
-                font-size: 0.8rem;
-            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1913,18 +1935,18 @@
             </a>
             <nav aria-label="Primary">
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#story">Story</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#work">Selected Work</a></li>
+                    <li><a href="#audiences">Who It's For</a></li>
+                    <li><a href="#services">Films</a></li>
+                    <li><a href="#process">Approach</a></li>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#quote">Quote Builder</a></li>
+                    <li><a href="#quote">Start a Film</a></li>
                 </ul>
             </nav>
             <a href="tel:+447988048357" class="header-phone" aria-label="Call Zippity Media Lab on 07988 048357">
                 <span aria-hidden="true">📞</span> 07988 048357
             </a>
-            <a href="#quote" class="btn-primary">Start a Project</a>
+            <a href="#quote" class="btn-primary">Start a Film</a>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span aria-hidden="true">☰</span></button>
         </div>
     </header>
@@ -1933,17 +1955,14 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-pill">
-                        <span aria-hidden="true">🎬</span> Cinematic Drone Stories &middot; CAA-Certified Operation
-                    </div>
                     <h1>Cinematic Drone Stories for Property, Events &amp; Heritage</h1>
-                    <p>Drone photography and videography with human-written scripts, human voiceovers and optional original music.<br>Films that show the place &mdash; and why it matters.</p>
+                    <p>Drone photography and videography with human narration.</p>
                     <p class="hero-location">
                         Based in Weston-super-Mare. Covering Bristol, Bath and the South West.
                     </p>
                     <div class="hero-actions">
-                        <a href="#quote" class="btn-primary">Start Your Story</a>
-                        <a href="#work" class="btn-secondary">See Our Work</a>
+                        <a href="#quote" class="btn-primary">Discuss a Film</a>
+                        <a href="#work" class="btn-secondary">See Selected Work</a>
                     </div>
                     <ul class="credential-list">
                         <li><strong>CAA Operator</strong> GBR-OP-WT9QWY4TY8KC</li>
@@ -1987,33 +2006,9 @@
                     <div class="trust-item">
                         <div class="trust-icon" aria-hidden="true">🎧</div>
                         <div class="trust-text">
-                            <strong>Human-Led Storytelling</strong>
-                            <span>Scripts, Voiceovers &amp; Original Music</span>
+                            <strong>Human Narration</strong>
+                            <span>Scripts, Narration &amp; Original Music</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="story">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">More Than Aerial Footage</h2>
-                    <p class="section-subtitle">A drone shot can show a place. A story gives it meaning. We build films around the people, purpose and detail that make a property, event or heritage site worth caring about.</p>
-                </div>
-
-                <div class="audience-grid">
-                    <div class="audience-card">
-                        <h3>Story &amp; Script</h3>
-                        <p>We find the thread that makes the place or occasion matter, then write a human script with a clear beginning, middle and end &mdash; never generic AI copy.</p>
-                    </div>
-                    <div class="audience-card">
-                        <h3>Human Voiceover</h3>
-                        <p>Every voice is performed by a professional human actor. Warm, authoritative, intimate or documentary: cast to match the story, not a synthetic template.</p>
-                    </div>
-                    <div class="audience-card">
-                        <h3>Original Music</h3>
-                        <p>Optional original music composed to picture, then mixed with voice and location sound. The result feels authored, not assembled from a stock library.</p>
                     </div>
                 </div>
             </div>
@@ -2022,103 +2017,55 @@
         <section id="audiences">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">For High-End Property, Events &amp; Heritage</h2>
-                    <p class="section-subtitle">Cinematic aerial stories for exceptional homes, private events, historic sites and conservation projects across the South West &mdash; plus select work for estate agents and developers.</p>
+                    <h2 class="section-title">Who It's For</h2>
+                    <p class="section-subtitle">We make story-led films for the people looking after places that matter: conservation and environment, heritage, architecture and landscape.</p>
                 </div>
 
                 <div class="audience-grid">
                     <div class="audience-card">
-                        <h3>High-End &amp; Architectural Property</h3>
-                        <p>Show the scale, setting and privacy of exceptional homes and architecturally significant buildings.</p>
+                        <h3>Conservation &amp; Environment</h3>
+                        <p>Films for the people restoring habitats, rivers, coast and countryside. Help funders, members and decision-makers see what is at stake and what change looks like.</p>
                         <ul>
-                            <li>Architectural reveals that show scale, setting and privacy</li>
-                            <li>Grounds, views and approach routes captured in a single visit</li>
-                            <li>Horizontal masters and vertical cuts for campaign and social</li>
-                            <li>Discreet sub-250g aircraft with minimal site disruption</li>
+                            <li>Habitat, river and coastal restoration stories</li>
+                            <li>Campaign, funder and volunteer films</li>
+                            <li>Repeatable aerial records over months or years</li>
+                            <li>Flight planning around wildlife and protected sites</li>
                         </ul>
                     </div>
 
                     <div class="audience-card">
-                        <h3>Events &amp; Private Functions</h3>
-                        <p>Add a sense of place and occasion to weddings, private parties, launches and outdoor events.</p>
+                        <h3>Heritage &amp; Historic Sites</h3>
+                        <p>Films for listed buildings, archaeology, restoration and interpretation. Give supporters and visitors a reason to care before they arrive.</p>
                         <ul>
-                            <li>Venue, grounds and guest-arrival establishing shots</li>
-                            <li>Discreet coverage planned around crowd safety and venue access</li>
-                            <li>Short highlight edits for social and post-event promotion</li>
-                            <li>Coordination with planners, venues and photographers</li>
+                            <li>Restoration and interpretation films</li>
+                            <li>Donor, archive and planning use</li>
+                            <li>Sensitive access with sub-250g aircraft</li>
+                            <li>Interviews, archive and location sound</li>
                         </ul>
                     </div>
 
                     <div class="audience-card">
-                        <h3>Historical Sites &amp; Conservation</h3>
-                        <p>Document historic landscapes, listed buildings and conservation work with a sensitive, repeatable aerial record.</p>
+                        <h3>Architecture &amp; Landscape</h3>
+                        <p>Place stories for exceptional homes, estates and architecturally significant buildings, not listing tours.</p>
                         <ul>
-                            <li>Sensitive aerial records of listed buildings and historic landscapes</li>
-                            <li>Repeatable waypoint flights for conservation and condition monitoring</li>
-                            <li>High-resolution stills and video for funders, archives and reports</li>
-                            <li>Flight planning around protected sites, wildlife and public access</li>
+                            <li>Architecture in its landscape</li>
+                            <li>Ground and aerial coverage in one visit</li>
+                            <li>Horizontal and vertical masters</li>
+                            <li>Discreet, access-aware filming</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="community">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Community &amp; Not-for-Profit Films</h2>
-                    <p class="section-subtitle">Some stories need to be told, not sold. We reserve a limited number of substantially discounted projects for people making a real difference locally.</p>
-                </div>
-
-                <div class="audience-grid">
-                    <div class="audience-card">
-                        <h3>Who We Support</h3>
-                        <p>Charities, non-profits, schools, community groups, arts and cultural organisations, and local heritage or conservation initiatives.</p>
-                    </div>
-                    <div class="audience-card">
-                        <h3>Substantial, Case by Case</h3>
-                        <p>There is no fixed discount. We look at the scope, access, travel and how the film will be used, then quote a rate that makes the project possible.</p>
-                    </div>
-                    <div class="audience-card">
-                        <h3>What We Can Make</h3>
-                        <p>Short documentaries, event films, volunteer and fundraising appeals, heritage records and campaign films &mdash; with the same human script and voice standards as our commercial work.</p>
-                    </div>
-                </div>
-
-                <p style="text-align: center; margin-top: 2rem;">
-                    <a href="#quote" class="btn-primary">Ask About a Supported Rate</a>
-                </p>
             </div>
         </section>
 
         <section id="services">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Cinematic Production, End to End</h2>
-                    <p class="section-subtitle">Drone photography and film, human scripts, professional voice and optional original music &mdash; shaped around the story.</p>
+                    <h2 class="section-title">What We Make</h2>
+                    <p class="section-subtitle">Story films, aerial records and place-led property films shaped around the story, not the aircraft.</p>
                 </div>
 
                 <div class="services-grid">
-                    <div class="service-card">
-                        <div>
-                            <div class="service-media">
-                                <img src="assets/service-aerial-800.webp"
-                                     srcset="assets/service-aerial-800.webp 800w, assets/service-aerial-1600.webp 1600w"
-                                     sizes="(max-width: 900px) 100vw, 400px"
-                                     width="800" height="500" loading="lazy" decoding="async"
-                                     alt="Aerial view of an isolated farmhouse beside a rural crossroads in open grassland">
-                            </div>
-                            <h3>Cinematic Drone Photography &amp; Film</h3>
-                            <p>4K HDR drone photography and film for high-end property, events, historic sites and conservation. Sub-250g aircraft fly closer to buildings, with horizontal and vertical deliverables built into one visit.</p>
-                        </div>
-                        <ul class="service-tags">
-                            <li>4K 60fps HDR</li>
-                            <li>Drone Photography</li>
-                            <li>CAA A1 Open</li>
-                            <li>Horizontal &amp; Vertical</li>
-                        </ul>
-                    </div>
-
                     <div class="service-card">
                         <div>
                             <div class="service-media">
@@ -2126,16 +2073,16 @@
                                      srcset="assets/service-audio-800.webp 800w, assets/service-audio-1600.webp 1600w"
                                      sizes="(max-width: 900px) 100vw, 400px"
                                      width="800" height="500" loading="lazy" decoding="async"
-                                     alt="Studio condenser microphone with a pop filter set up for recording">
+                                     alt="Studio condenser microphone with a pop filter set up for narration recording">
                             </div>
-                            <h3>Human Voiceover, Script &amp; Original Music</h3>
-                            <p>Human-written scripts, professional human voice actors and optional original music composed to picture. Voice, music and location sound are mixed and mastered in-house at 24-bit/48kHz, with licensing included for worldwide publishing.</p>
+                            <h3>Story Films</h3>
+                            <p>Research-led short films for conservation, heritage and landscape projects. Aerial and ground filming, interviews, edit and grade with human narration, original music and sound design where commissioned.</p>
                         </div>
                         <ul class="service-tags">
                             <li>Human Scripts</li>
-                            <li>Human Voiceover</li>
+                            <li>Human Narration</li>
                             <li>Original Music</li>
-                            <li>Licensing Included</li>
+                            <li>Sound Design</li>
                         </ul>
                     </div>
 
@@ -2148,21 +2095,134 @@
                                      width="800" height="500" loading="lazy" decoding="async"
                                      alt="Aerial view of solar panels on a rooftop during an inspection flight">
                             </div>
-                            <h3>Roof, Chimney &amp; Solar Inspections</h3>
-                            <p>High-resolution roof, chimney and solar panel imagery for surveyors, heritage site teams and building professionals. Sub-250g drones capture the detail without ladders or scaffolding, with an annotated PDF condition report.</p>
-                            <a class="service-report-link" href="assets/reports/zippity-sample-aerial-condition-report.pdf" target="_blank" rel="noopener" type="application/pdf" aria-label="View a sample aerial asset condition report (PDF, 5 pages, 2.2 MB)">
-                                <span aria-hidden="true">📄</span>
-                                <span>View a sample condition report</span>
-                                <span class="service-report-meta">(PDF, 5 pages, 2.2 MB)</span>
-                            </a>
+                            <h3>Aerial Records &amp; Monitoring</h3>
+                            <p>Repeatable GPS waypoint missions for conservation, restoration and construction monitoring. Each visit captures the same framing, giving you a clean like-for-like record for funders, archives and reports.</p>
                         </div>
                         <ul class="service-tags">
-                            <li>Roofs &amp; Chimneys</li>
-                            <li>Solar Panels</li>
-                            <li>High resolution still imagery</li>
-                            <li>Written PDF report</li>
+                            <li>Repeatable Flights</li>
+                            <li>4K Stills &amp; Video</li>
+                            <li>Progress Timeline</li>
+                            <li>Archive Ready</li>
                         </ul>
                     </div>
+
+                    <div class="service-card">
+                        <div>
+                            <div class="service-media">
+                                <img src="assets/service-aerial-800.webp"
+                                     srcset="assets/service-aerial-800.webp 800w, assets/service-aerial-1600.webp 1600w"
+                                     sizes="(max-width: 900px) 100vw, 400px"
+                                     width="800" height="500" loading="lazy" decoding="async"
+                                     alt="Aerial view of an isolated farmhouse beside a rural crossroads in open grassland">
+                            </div>
+                            <h3>Property &amp; Architecture Films</h3>
+                            <p>Story-led films for exceptional homes, estates and architecturally significant buildings. We show architecture in its landscape.</p>
+                        </div>
+                        <ul class="service-tags">
+                            <li>Place-Led Films</li>
+                            <li>Ground &amp; Aerial</li>
+                            <li>Horizontal &amp; Vertical</li>
+                            <li>Discreet Access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="text-align: center; margin-top: 2rem; color: var(--text-muted);">Human-written and human-recorded narration, original music and sound design are available on any film.</p>
+            </div>
+        </section>
+
+        <section id="story">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Story First. Then the Flight.</h2>
+                    <p class="section-subtitle">A drone shot can show a place. A story gives it meaning. We research the place, find the human thread, then use aerial and ground footage, narration and sound to make you feel it.</p>
+                </div>
+
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h3>Research &amp; Script</h3>
+                        <p>Through conversations, site research and archive, we find the thread that makes the place matter and then write a human script with a clear beginning, middle and end.</p>
+                    </div>
+                    <div class="audience-card">
+                        <h3>Filming on the Ground and From the Air</h3>
+                        <p>Aerial establishing shots, close detail, interviews and location sound. One visit can cover the landscape, the building and the people who care for it.</p>
+                    </div>
+                    <div class="audience-card">
+                        <h3>Post, Narration &amp; Sound</h3>
+                        <p>Edit and grade, then add human narration, original music composed to picture and sound design where commissioned. The result feels authored, not assembled from a stock library.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-subtitle">Recent work across architecture and place: the same story-first approach we bring to conservation and heritage projects.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <a class="portfolio-card" href="case_studies/case-study-1/">
+                        <div class="portfolio-thumb">
+                            <img src="case_studies/case-study-1/images/front/web/case-study-1-front-1920.webp"
+                                 alt="Aerial front view of a detached home and its grounds"
+                                 loading="lazy" decoding="async"
+                                 width="640" height="480">
+                        </div>
+                        <div class="portfolio-caption">
+                            <strong>Five-Bedroom Detached Home</strong>
+                            Architecture &amp; place. A house, its grounds and the landscape around it.
+                        </div>
+                    </a>
+                    <a class="portfolio-card" href="case_studies/case-study-2/">
+                        <div class="portfolio-thumb">
+                            <img src="case_studies/case-study-2/images/front/web/case-study-2-front-1920.webp"
+                                 alt="Aerial front view of a 1960s chalet-style home and garden"
+                                 loading="lazy" decoding="async"
+                                 width="640" height="480">
+                        </div>
+                        <div class="portfolio-caption">
+                            <strong>1960s Chalet-Style Home, Dorset</strong>
+                            Architecture &amp; place. A 1960s house and garden, filmed as a place story with aerial, interior and social cuts.
+                        </div>
+                    </a>
+                </div>
+                <p style="text-align: center; margin-top: 1.75rem; color: var(--text-muted); font-size: 0.95rem;">
+                    <a href="case_studies/" style="color: var(--accent-cyan);">View all case studies</a> or <a href="#quote" style="color: var(--accent-cyan);">start your own project</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How a Film Gets Made</h2>
+                    <p class="section-subtitle">From the first conversation to the final mix, every stage serves the story.</p>
+                </div>
+
+                <!-- Crawlability note: all three phases are in the DOM and
+                     visible by default. The buttons only add progressive
+                     enhancement (collapsing them) once JS is running. -->
+                <div class="process-tabs" role="tablist" aria-label="Production workflow phases">
+                    <button class="tab-btn active" role="tab" id="tab-phase1" aria-controls="phase1" aria-selected="true" onclick="switchTab(event, 'phase1')">1. Story &amp; Research</button>
+                    <button class="tab-btn" role="tab" id="tab-phase2" aria-controls="phase2" aria-selected="false" tabindex="-1" onclick="switchTab(event, 'phase2')">2. Production</button>
+                    <button class="tab-btn" role="tab" id="tab-phase3" aria-controls="phase3" aria-selected="false" tabindex="-1" onclick="switchTab(event, 'phase3')">3. Post &amp; Delivery</button>
+                </div>
+
+                <div id="phase1" class="tab-content active" role="tabpanel" aria-labelledby="tab-phase1" tabindex="0">
+                    <h3 class="tab-heading">Phase 1: Story, Site &amp; Research</h3>
+                    <p class="tab-body">We agree the audience, the change the film should make and the story that gets you there. We research the place, the people and any archive, then check access, airspace and permissions.</p>
+                </div>
+
+                <div id="phase2" class="tab-content" role="tabpanel" aria-labelledby="tab-phase2" tabindex="0">
+                    <h3 class="tab-heading">Phase 2: Production</h3>
+                    <p class="tab-body">Aerial and ground footage, interviews and location sound, planned around wildlife, visitors and protected sites.</p>
+                </div>
+
+                <div id="phase3" class="tab-content" role="tabpanel" aria-labelledby="tab-phase3" tabindex="0">
+                    <h3 class="tab-heading">Phase 3: Post &amp; Delivery</h3>
+                    <p class="tab-body">Script, edit and grade. Add human narration, original music and sound design where commissioned, then deliver masters and social cuts.</p>
                 </div>
             </div>
         </section>
@@ -2171,29 +2231,29 @@
             <div class="container">
                 <div class="tech-showcase">
                     <div>
-                        <h2 class="section-title section-title-left">Craft, Story &amp; Technical Rigour</h2>
-                        <p class="tech-intro">Every film starts with a human story. We then apply engineering discipline to every flight, from pre-flight risk checks to 4K colour grading.</p>
+                        <h2 class="section-title section-title-left">Access, Compliance &amp; Care</h2>
+                        <p class="tech-intro">Conservation and heritage sites need a crew that understands access, permissions and sensitivity; not just a camera in the air.</p>
 
                         <ul class="tech-spec-list">
                             <li class="tech-spec-item">
                                 <span class="num" aria-hidden="true">1</span>
                                 <div>
-                                    <strong>A1 Open Sub-Category Operational Freedom</strong>
-                                    <p class="tech-spec-body">Sub-250g airframes permit safe, legal close-proximity flight near people and buildings.</p>
+                                    <strong>Protected Sites &amp; Permissions</strong>
+                                    <p class="tech-spec-body">We plan around SSSIs, wildlife, National Trust and English Heritage land, landowners and public access before the shoot.</p>
                                 </div>
                             </li>
                             <li class="tech-spec-item">
                                 <span class="num" aria-hidden="true">2</span>
                                 <div>
-                                    <strong>Automated Waypoint Mission Profiles</strong>
-                                    <p class="tech-spec-body">Pre-programmed flight profiles keep framing consistent across conservation, restoration and construction monitoring.</p>
+                                    <strong>Sub-250g Access</strong>
+                                    <p class="tech-spec-body">A1 Open sub-category operations let us fly closer to buildings and people with less disruption and no ladders or scaffolding.</p>
                                 </div>
                             </li>
                             <li class="tech-spec-item">
                                 <span class="num" aria-hidden="true">3</span>
                                 <div>
-                                    <strong>UHS-I U3 / V30 Certified Capture Pipeline</strong>
-                                    <p class="tech-spec-body">High-bitrate media pipelines prevent dropped frames on time-critical shoots.</p>
+                                    <strong>Repeatable Missions</strong>
+                                    <p class="tech-spec-body">Pre-programmed waypoint flights keep framing consistent for conservation, restoration and construction monitoring.</p>
                                 </div>
                             </li>
                         </ul>
@@ -2202,7 +2262,7 @@
                     <div class="tech-box">
                         <span class="tech-box-label">Flight Stack Profile</span>
                         <h3 class="tech-box-title">DJI Mini 4 Pro Suite</h3>
-                        <p class="tech-box-body">Configured with the RC 2 Smart Controller for instant deployment.</p>
+                        <p class="tech-box-body">Configured with the RC 2 Smart Controller for fast, discreet deployment on sensitive sites.</p>
 
                         <div class="spec-grid">
                             <div class="spec-node">
@@ -2227,42 +2287,66 @@
             </div>
         </section>
 
-        <section id="work">
+        <section id="community">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Selected Work</h2>
-                    <p class="section-subtitle">Property films built around place, detail and a clear story &mdash; not just a sequence of aerial shots.</p>
+                    <h2 class="section-title">Supported Projects</h2>
+                    <p class="section-subtitle">Some stories need to be told, not sold. We reserve a limited number of substantially discounted projects for people making a real difference locally.</p>
                 </div>
 
-                <div class="portfolio-grid">
-                    <a class="portfolio-card" href="case_studies/case-study-1/">
-                        <div class="portfolio-thumb">
-                            <img src="case_studies/case-study-1/images/front/web/case-study-1-front-1920.webp"
-                                 alt="Aerial front view of a property featured in Case Study 1"
-                                 loading="lazy" decoding="async"
-                                 width="640" height="480">
-                        </div>
-                        <figcaption>
-                            <strong>Five-Bedroom Detached Home</strong>
-                            A complete property story with aerial, interior and detail footage for sale and social.
-                        </figcaption>
-                    </a>
-                    <a class="portfolio-card" href="case_studies/case-study-2/">
-                        <div class="portfolio-thumb">
-                            <img src="case_studies/case-study-2/images/front/web/case-study-2-front-1920.webp"
-                                 alt="Aerial front view of a property featured in Case Study 2"
-                                 loading="lazy" decoding="async"
-                                 width="640" height="480">
-                        </div>
-                        <figcaption>
-                            <strong>1960s Chalet-Style Home, Dorset</strong>
-                            A story-led property film with aerial views, interior coverage and a short social reel.
-                        </figcaption>
-                    </a>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h3>Who We Support</h3>
+                        <p>Charities, non-profits, schools, community groups, arts and cultural organisations, and local heritage or conservation initiatives.</p>
+                    </div>
+                    <div class="audience-card">
+                        <h3>Substantial, Case by Case</h3>
+                        <p>There is no fixed discount. We look at the scope, access, travel and how the film will be used, then quote a rate that makes the project possible.</p>
+                    </div>
+                    <div class="audience-card">
+                        <h3>What We Can Make</h3>
+                        <p>Short documentaries, campaign films, volunteer and fundraising appeals, heritage records and event films, with the same human script and narration standards as our commercial work.</p>
+                    </div>
                 </div>
-                <p style="text-align: center; margin-top: 1.75rem; color: var(--text-muted); font-size: 0.95rem;">
-                    <a href="case_studies/" style="color: var(--accent-cyan);">View all case studies</a> or <a href="#quote" style="color: var(--accent-cyan);">start your own project</a>.
+
+                <p style="text-align: center; margin-top: 2rem;">
+                    <a href="#quote" class="btn-primary">Ask About a Supported Rate</a>
                 </p>
+            </div>
+        </section>
+
+        <section id="other-services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Other Aerial Services</h2>
+                    <p class="section-subtitle">Events and inspections are also available, delivered with the same care and standards as our story films.</p>
+                </div>
+
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h3>Events &amp; Private Functions</h3>
+                        <p>Discreet aerial coverage for weddings, private parties, launches and outdoor events.</p>
+                        <ul>
+                            <li>Venue, grounds and guest-arrival establishing shots</li>
+                            <li>Coverage planned around crowd safety and venue access</li>
+                            <li>Short highlight edits for social and post-event promotion</li>
+                            <li>Coordination with planners, venues and photographers</li>
+                        </ul>
+                    </div>
+                    <div class="audience-card">
+                        <h3>Roof, Chimney &amp; Solar Inspections</h3>
+                        <p>High-resolution roof, chimney and solar panel imagery for surveyors, heritage site teams and building professionals.</p>
+                        <ul>
+                            <li>Sub-250g access without ladders or scaffolding</li>
+                            <li>Close 4K stills and video</li>
+                            <li>Annotated PDF condition report</li>
+                            <li>Repeatable visits for progress records</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">
+                            <a href="assets/reports/zippity-sample-aerial-condition-report.pdf" target="_blank" rel="noopener" type="application/pdf" style="color: var(--accent-cyan); font-size: 0.85rem;">View a sample condition report (PDF, 5 pages, 2.2 MB)</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -2270,7 +2354,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Areas We Cover</h2>
-                    <p class="section-subtitle">Cinematic drone photography and film across Bristol, North Somerset and the wider South West.</p>
+                    <p class="section-subtitle">Story-led drone films across Bristol, North Somerset and the wider South West, for conservation, heritage, architecture and landscape projects.</p>
                 </div>
 
                 <div class="area-grid">
@@ -2280,7 +2364,7 @@
                     </div>
                     <div class="area-item">
                         <strong>Weston-super-Mare</strong>
-                        <span>Our base &mdash; Worle, Locking, Kewstoke, Sand Bay</span>
+                        <span>Our base: Worle, Locking, Kewstoke, Sand Bay</span>
                     </div>
                     <div class="area-item">
                         <strong>Bath</strong>
@@ -2310,46 +2394,11 @@
             </div>
         </section>
 
-        <section id="process">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">How a Story Becomes a Film</h2>
-                    <p class="section-subtitle">From the first conversation to the final mix, every stage serves the story.</p>
-                </div>
-
-                <!-- Crawlability note: all three phases are in the DOM and
-                     visible by default. The buttons only add progressive
-                     enhancement (collapsing them) once JS is running. Previously
-                     phases 2 and 3 were display:none and at risk of never being
-                     indexed by Google. -->
-                <div class="process-tabs" role="tablist" aria-label="Production workflow phases">
-                    <button class="tab-btn active" role="tab" id="tab-phase1" aria-controls="phase1" aria-selected="true" onclick="switchTab(event, 'phase1')">1. Story &amp; Flight Planning</button>
-                    <button class="tab-btn" role="tab" id="tab-phase2" aria-controls="phase2" aria-selected="false" tabindex="-1" onclick="switchTab(event, 'phase2')">2. On-Site Capture</button>
-                    <button class="tab-btn" role="tab" id="tab-phase3" aria-controls="phase3" aria-selected="false" tabindex="-1" onclick="switchTab(event, 'phase3')">3. Voice, Music &amp; Edit</button>
-                </div>
-
-                <div id="phase1" class="tab-content active" role="tabpanel" aria-labelledby="tab-phase1" tabindex="0">
-                    <h3 class="tab-heading">Phase 1: Story, Site &amp; Flight Planning</h3>
-                    <p class="tab-body">We agree the story, audience and deliverables, then check airspace, run a risk assessment and set fail-safes before we reach site.</p>
-                </div>
-
-                <div id="phase2" class="tab-content" role="tabpanel" aria-labelledby="tab-phase2" tabindex="0">
-                    <h3 class="tab-heading">Phase 2: Cinematic Aerial Capture</h3>
-                    <p class="tab-body">We fly planned waypoints and manual tracking passes, capturing the architecture, landscape, event or heritage detail that carries the story.</p>
-                </div>
-
-                <div id="phase3" class="tab-content" role="tabpanel" aria-labelledby="tab-phase3" tabindex="0">
-                    <h3 class="tab-heading">Phase 3: Human Voice, Music &amp; Edit</h3>
-                    <p class="tab-body">We write and record the human voiceover, compose optional original music, grade 10-bit log footage and mix the final master for delivery.</p>
-                </div>
-            </div>
-        </section>
-
         <section id="faq">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Frequently Asked Questions</h2>
-                    <p class="section-subtitle">Common questions about storytelling, human voiceovers, community rates, licensing and turnaround.</p>
+                    <p class="section-subtitle">Common questions about story films, protected sites, narration, licensing and turnaround.</p>
                 </div>
 
                 <!-- Native <details> so answers stay crawlable without JS.
@@ -2358,72 +2407,79 @@
                      becomes inconsistent with the visible content. -->
                 <div class="faq-list">
                     <details class="faq-item">
-                        <summary>Do I need a drone licence to film my property, event or heritage site?</summary>
+                        <summary>What kinds of films do you make?</summary>
                         <div class="faq-answer">
-                            <p>No. All of our drone operations are flown by a registered remote pilot in the CAA A1 Open sub-category using sub-250g aircraft. You are hiring a compliant commercial operator, not operating the drone yourself, so the legal duty to be qualified sits with us. We will also confirm airspace and any permissions before flying.</p>
+                            <p>Story-led short films for conservation, heritage, architecture and landscape projects. We can make campaign films, funder and supporter films, interpretation pieces, archive records and social cuts.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Are you a drone company in Bristol?</summary>
+                        <summary>Who do you work with?</summary>
                         <div class="faq-answer">
-                            <p>We are based in Weston-super-Mare, North Somerset, and cover Bristol, Bath and the wider South West of England as our core service area. Bristol city centre is roughly 22 miles from our base, and we schedule Bristol shoots regularly.</p>
+                            <p>Conservation and environment organisations, heritage and historic sites, architects and landscape practices, and owners of exceptional homes and estates. We also work with charities, community groups and other production teams.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>What can you film with a sub-250g drone?</summary>
+                        <summary>Can you film on protected or sensitive sites?</summary>
                         <div class="faq-answer">
-                            <p>Sub-250g aircraft can legally fly closer to people and structures than heavier drones, which makes them well suited to architectural property films, event establishing shots and close inspection of historic buildings. We shoot 4K HDR at up to 60fps with 10-bit D-Log M capture for colour grading.</p>
+                            <p>Yes. We plan around protected landscapes, wildlife, landowners and public access, and we confirm permissions and airspace before the shoot. Our sub-250g aircraft let us work discreetly around buildings, visitors and sensitive habitats.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Do you use AI voiceovers or scripts?</summary>
+                        <summary>Do you film interviews, archive and location sound?</summary>
                         <div class="faq-answer">
-                            <p>No. We do not use AI-generated voiceovers or AI-written scripts. Every script is written by a human, and every voiceover is performed by a professional human voice actor. Original music is optional and composed for the film.</p>
+                            <p>Yes. A story film can include interviews, archive material, location sound and ground-level footage alongside the aerial work. We can also work with your existing archive or footage.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Can I get a human voiceover and original music?</summary>
+                        <summary>Can you show change over time?</summary>
                         <div class="faq-answer">
-                            <p>Yes. We can write the script, record a professional human voiceover and add optional original music composed to picture. Voice, music and location sound are then mixed and mastered in-house at 24-bit/48kHz.</p>
+                            <p>Yes. We program repeatable GPS waypoint missions, so each visit captures an identical flight path and framing. That gives you a clean like-for-like timeline for conservation, restoration or construction monitoring.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Can you film a conservation, restoration or construction project every month from the same angle?</summary>
+                        <summary>Do you offer narration, original music and sound design?</summary>
                         <div class="faq-answer">
-                            <p>Yes. We program repeatable GPS waypoint missions, so each visit captures an identical flight path and framing. That gives you a clean like-for-like progress timeline for conservation monitoring, restoration records or construction updates.</p>
+                            <p>Yes. Narration, original music and sound design are available on any film. Every script is written by a human and every narration performance is by a professional human voice actor. Music is composed to picture, and sound design is mixed in-house at 24-bit/48kHz.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Do you offer discounts for community projects?</summary>
+                        <summary>How long is a film, and where can it be used?</summary>
                         <div class="faq-answer">
-                            <p>Yes. We reserve a limited number of substantially discounted projects for charities, schools, community groups, arts and cultural organisations, and local heritage or conservation initiatives. Discounts are assessed case by case, based on scope, access and how the film will be used.</p>
+                            <p>Most story films run from 60 to 180 seconds, with shorter social cuts where needed. We deliver horizontal masters and vertical versions, and licensing is included so you can publish worldwide without further clearance.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>How fast can you turn footage around?</summary>
+                        <summary>How long does it take?</summary>
                         <div class="faq-answer">
-                            <p>Standard turnaround is 48 hours from shoot to final master, including colour grading, multi-track audio mixing and voiceover sync. Rush delivery is available on request and subject to shoot volume.</p>
+                            <p>Aerial records and inspections are typically delivered within 48 hours of the shoot. Story films take longer because of research, scripting, narration and post-production, usually two to four weeks depending on scope.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Are you insured for commercial drone work?</summary>
+                        <summary>Where do you work?</summary>
+                        <div class="faq-answer">
+                            <p>We are based in Weston-super-Mare, North Somerset, and cover Bristol, Bath and the wider South West of England as our core service area. We also travel for the right project.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Are you CAA registered and insured?</summary>
                         <div class="faq-answer">
                             <p>Yes. All commercial operations are backed by third-party aviation liability insurance to EC785/2004, and we are registered with the Civil Aviation Authority as operator GBR-OP-WT9QWY4TY8KC and remote pilot GBR-RP-GVPVYRL8PV3T.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Can agencies, event producers and heritage organisations sub-contract you for white-label delivery?</summary>
+                        <summary>Do you use AI voiceovers or scripts?</summary>
                         <div class="faq-answer">
-                            <p>Yes. We work as a white-label production partner for agencies, event producers and heritage organisations. You get unbranded masters, full audio licensing included so you can publish worldwide without further clearance, and delivery within 48 hours.</p>
+                            <p>No. We do not use AI-generated narration or AI-written scripts. Every script is written by a human, and every narration performance is by a professional human voice actor.</p>
                         </div>
                     </details>
                 </div>
@@ -2433,8 +2489,8 @@
         <section id="quote">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Project Quote &amp; Story Brief</h2>
-                    <p class="section-subtitle">Tell us what you want to make and who it is for. We will reply with a tailored estimate.</p>
+                    <h2 class="section-title">Start a Film</h2>
+                    <p class="section-subtitle">Tell us about the place, who the film is for and what you want it to achieve. We will reply with a tailored estimate.</p>
                 </div>
 
                 <div class="quote-builder">
@@ -2443,24 +2499,24 @@
                             <legend>Primary Deliverable</legend>
                             <div class="options-grid">
                                 <label class="option-btn">
-                                    <input type="radio" name="service" value="Property Story" checked onchange="selectOption(this, 'service', this.value)">
-                                    Property Story
+                                    <input type="radio" name="service" value="Conservation &amp; Environment" checked onchange="selectOption(this, 'service', this.value)">
+                                    Conservation &amp; Environment
                                 </label>
                                 <label class="option-btn">
-                                    <input type="radio" name="service" value="Event Story" onchange="selectOption(this, 'service', this.value)">
-                                    Event Story
+                                    <input type="radio" name="service" value="Heritage &amp; Historic Site" onchange="selectOption(this, 'service', this.value)">
+                                    Heritage &amp; Historic Site
                                 </label>
                                 <label class="option-btn">
-                                    <input type="radio" name="service" value="Heritage &amp; Conservation" onchange="selectOption(this, 'service', this.value)">
-                                    Heritage &amp; Conservation
+                                    <input type="radio" name="service" value="Architecture &amp; Place" onchange="selectOption(this, 'service', this.value)">
+                                    Architecture &amp; Place
                                 </label>
                                 <label class="option-btn">
-                                    <input type="radio" name="service" value="Full Film &amp; Audio" onchange="selectOption(this, 'service', this.value)">
-                                    Full Film &amp; Audio
+                                    <input type="radio" name="service" value="Aerial Record &amp; Monitoring" onchange="selectOption(this, 'service', this.value)">
+                                    Aerial Record &amp; Monitoring
                                 </label>
                                 <label class="option-btn">
-                                    <input type="radio" name="service" value="Voice &amp; Original Music" onchange="selectOption(this, 'service', this.value)">
-                                    Voice &amp; Original Music
+                                    <input type="radio" name="service" value="Event Film" onchange="selectOption(this, 'service', this.value)">
+                                    Event Film
                                 </label>
                                 <label class="option-btn">
                                     <input type="radio" name="service" value="Roof &amp; Solar Inspection" onchange="selectOption(this, 'service', this.value)">
@@ -2486,15 +2542,15 @@
 
                         <div class="form-group">
                             <label for="projectMessage">Project Details / Message</label>
-                            <textarea id="projectMessage" name="message" class="form-control" rows="4" placeholder="Tell us about the place, event or project, who the film is for, and any access or timing requirements..."></textarea>
+                            <textarea id="projectMessage" name="message" class="form-control" rows="4" placeholder="Tell us about the place, who the film is for, what you want it to achieve, and any access or timing requirements..."></textarea>
                         </div>
 
                         <fieldset class="form-group">
-                            <legend>Community Project?</legend>
+                            <legend>Supported-Rate Project?</legend>
                             <div class="options-grid">
                                 <label class="option-btn" style="grid-column: 1 / -1;">
                                     <input type="checkbox" id="communityProject" name="community_project" value="Yes">
-                                    Yes &mdash; charity, school, community, arts or heritage project
+                                    Yes to charity, school, community, arts, heritage or conservation project
                                 </label>
                             </div>
                         </fieldset>
@@ -2512,20 +2568,20 @@
                         <div>
                             <h3 class="summary-heading">Estimate Summary</h3>
                             <div class="summary-line">
-                                <span>Selected Story:</span>
-                                <strong id="summaryService" class="summary-value">Property Story</strong>
+                                <span>Selected Film:</span>
+                                <strong id="summaryService" class="summary-value">Conservation &amp; Environment</strong>
                             </div>
                             <div class="summary-line">
                                 <span>CAA Compliance / Flight Plan:</span>
                                 <strong class="summary-value summary-value-accent">Included</strong>
                             </div>
                             <div class="summary-line">
-                                <span>Voice &amp; Music:</span>
-                                <strong id="summaryAudio" class="summary-value">Human Voice Optional</strong>
+                                <span>Narration &amp; Music:</span>
+                                <strong id="summaryAudio" class="summary-value">Optional</strong>
                             </div>
                             <div class="summary-total">
-                                <span>Estimated Turnaround:</span>
-                                <span class="summary-turnaround">48 Hours</span>
+                                <span>Response Time:</span>
+                                <span class="summary-turnaround">Within 1 working day</span>
                             </div>
                         </div>
 
@@ -2537,7 +2593,7 @@
                             <input type="hidden" name="subject" value="Project Inquiry: Zippity Media Lab">
                             <input type="hidden" name="from_name" value="Zippity Media Lab website">
                             <input type="hidden" name="redirect" value="https://zippitymedialab.com/?sent=1#quote">
-                            <input type="hidden" name="package" id="packageHidden" value="Property Story">
+                            <input type="hidden" name="package" id="packageHidden" value="Conservation &amp; Environment">
                             <input type="hidden" name="location" id="locationHidden" value="">
                             <input type="hidden" name="targetDate" id="dateHidden" value="">
                             <input type="hidden" name="email" id="emailHidden" value="">
@@ -2563,7 +2619,7 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-logo">ZIPPITY Media Lab</div>
-                    <p class="footer-blurb">Cinematic drone stories for high-end property, events, historic sites and conservation across Bristol and the South West. Human scripts, human voiceovers and optional original music.</p>
+                    <p class="footer-blurb">Story-led drone films for conservation, heritage, architecture and landscape across Bristol and the South West. Human scripts, human narration, original music and sound design where you need them.</p>
                     <address class="footer-address">
                         5 Ormrod Grove, Weston-super-Mare<br>
                         North Somerset, BS24 7LN<br>
@@ -2584,15 +2640,17 @@
                 <div>
                     <h2 class="footer-heading">Quick Links</h2>
                     <ul class="footer-contact">
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#story">Story</a></li>
-                        <li><a href="#audiences">Property, Events &amp; Heritage</a></li>
-                        <li><a href="#community">Community Films</a></li>
+                        <li><a href="#audiences">Who It's For</a></li>
+                        <li><a href="#services">What We Make</a></li>
+                        <li><a href="#story">Story &amp; Craft</a></li>
                         <li><a href="#work">Selected Work</a></li>
+                        <li><a href="#process">Approach</a></li>
+                        <li><a href="#technical">Access &amp; Care</a></li>
+                        <li><a href="#community">Supported Projects</a></li>
+                        <li><a href="#other-services">Other Aerial Services</a></li>
                         <li><a href="#areas">Areas We Cover</a></li>
-                        <li><a href="#technical">Craft &amp; CAA</a></li>
                         <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#quote">Quote Builder</a></li>
+                        <li><a href="#quote">Start a Film</a></li>
                     </ul>
                 </div>
 
@@ -2727,7 +2785,7 @@
         // The radios carry the state, so selection is now visible to assistive
         // tech and reachable by keyboard. This function only keeps the summary
         // panel in sync and announces the change.
-        let currentPackage = 'Property Story';
+        let currentPackage = 'Conservation & Environment';
 
         function selectOption(element, category, value) {
             if (category !== 'service') return;
@@ -2736,18 +2794,14 @@
             document.getElementById('summaryService').textContent = value;
 
             const audioLabel = document.getElementById('summaryAudio');
-            if (value === 'Full Film & Audio') {
-                audioLabel.textContent = 'Master Multi-Track';
-            } else if (value === 'Voice & Original Music') {
-                audioLabel.textContent = 'Human Voice + Original Score';
-            } else if (value === 'Roof & Solar Inspection') {
+            if (value === 'Aerial Record & Monitoring' || value === 'Roof & Solar Inspection') {
                 audioLabel.textContent = 'Not Required';
             } else {
-                audioLabel.textContent = 'Human Voice Optional';
+                audioLabel.textContent = 'Optional';
             }
 
             document.getElementById('summaryAnnounce').textContent =
-                `Selected story: ${value}. Voice and music: ${audioLabel.textContent}.`;
+                `Selected film: ${value}. Narration and music: ${audioLabel.textContent}.`;
         }
 
         const quoteForm = document.getElementById('quoteForm');
