@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  sitemap.xml for the Zippity Media Lab site at https://zippitymedialab.com/
-  TODO(seo): update <loc> and <lastmod> when content changes.
-  The <head> comment block in index.html lists every domain-dependent string.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://zippitymedialab.com/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://www.zippitymedialab.com/</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zippitymedialab.com/case_studies/</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zippitymedialab.com/case_studies/case-study-1/</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://www.zippitymedialab.com/case_studies/case-study-2/</loc>
+    <lastmod>2026-11-19</lastmod>
   </url>
 </urlset>
