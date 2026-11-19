@@ -15,7 +15,7 @@
 - Keep the primary CTA as "Start a Film".
 - Canonical domain is `https://www.zippitymedialab.com`. Keep canonical, Open Graph, Twitter, JSON-LD IDs and sitemap URLs on that host.
 - Every content image needs descriptive alt text. Keep hero images eager and lazy-load images below the fold.
-- After editing shared case-study CSS or JS, bump the matching `?v=` query string in every case study page that loads it.
+- After editing shared case-study CSS or JS, bump the matching `?v=` query string in every page that loads it, including `shorts/index.html`.
 - Case study "Download all files" buttons are illustrative placeholders. `**/download/` is gitignored, so those local assets are not deployed.
 
 ## Forms and deployment

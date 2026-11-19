@@ -707,6 +707,18 @@
             margin-bottom: 0.25rem;
         }
 
+        @media (max-width: 1120px) and (min-width: 769px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            .nav-links a {
+                font-size: 0.84rem;
+            }
+            .header-phone {
+                display: none;
+            }
+        }
+
         /* Areas served */
         .area-grid {
             display: grid;
@@ -1962,6 +1974,7 @@
                     <li><a href="#services">Films</a></li>
                     <li><a href="#process">Approach</a></li>
                     <li><a href="#work">Work</a></li>
+                    <li><a href="shorts/">Shorts</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#quote">Start a Film</a></li>
                 </ul>
@@ -2183,7 +2196,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Selected Work</h2>
-                    <p class="section-subtitle">Recent work across architecture and place: the same story-first approach we bring to conservation and heritage projects.</p>
+                    <p class="section-subtitle">Recent work across architecture and place, plus a selection of vertical aerial shorts.</p>
                 </div>
 
                 <div class="portfolio-grid">
@@ -2209,6 +2222,21 @@
                         <div class="portfolio-caption">
                             <strong>1960s Chalet-Style Home, Dorset</strong>
                             Architecture &amp; place. A 1960s house and garden, filmed as a place story with aerial, interior and social cuts.
+                        </div>
+                    </a>
+                    <a class="portfolio-card" href="shorts/">
+                        <div class="portfolio-thumb">
+                            <img src="assets/shorts/shorts-card-640.webp"
+                                 srcset="assets/shorts/shorts-card-640.webp 640w,
+                                         assets/shorts/shorts-card-1280.webp 1280w"
+                                 sizes="(max-width: 768px) 100vw, 400px"
+                                 alt="Collage of fireworks, Uphill and Locking Parklands aerial shorts"
+                                 loading="lazy" decoding="async"
+                                 width="640" height="480">
+                        </div>
+                        <div class="portfolio-caption">
+                            <strong>Aerial Shorts</strong>
+                            Five vertical films: reversed fireworks, Uphill Quarry and Beacon, and Locking Parklands.
                         </div>
                     </a>
                 </div>
@@ -2668,6 +2696,7 @@
                         <li><a href="#services">What We Make</a></li>
                         <li><a href="#story">Story &amp; Craft</a></li>
                         <li><a href="#work">Selected Work</a></li>
+                        <li><a href="shorts/">Aerial Shorts</a></li>
                         <li><a href="#process">Approach</a></li>
                         <li><a href="#technical">Access &amp; Care</a></li>
                         <li><a href="#community">Supported Projects</a></li>
